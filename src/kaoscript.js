@@ -1,6 +1,6 @@
 /**
- * kaoscript.ks
- * Version 0.1.0
+ * kaoscript.js
+ * Version 0.1.1
  * October 5th, 2016
  *
  * Copyright (c) 2016 Baptiste Augrain
@@ -72,7 +72,7 @@ CodeMirror.defineSimpleMode('kaoscript', {
 			next: 'comment_dash'
 		},
 		{
-			regex: /[-+\/*=<>!&\|\^\?:]+/,
+			regex: /[-+\/*=<>!&\|\^\?:]+|\.\.\./,
 			token: 'operator'
 		},
 		{
